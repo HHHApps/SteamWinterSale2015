@@ -3,13 +3,13 @@
 
   "name": "Steam Winter Sale 2015 Next In Queue Clicker",
   "description": "This extension clicks the Next In Queue button for the Steam Winter 2015 Sale.",
-  "version": "1.2",
+  "version": "1.3",
   "background":{
-	"scripts": ["/lib/jquery-1.11.3.min.js", "/lib/underscore-min.js", "nextInQueue.js"]
+	"scripts": ["/lib/jquery-1.11.3.min.js", "/lib/underscore-min.js"]
   },
   "content_scripts": [{
   	"matches": ["*://*.store.steampowered.com/*"],
-  	"js":      ["loadSteamNextInQueue.js"]
+	"js":      ["/lib/jquery-1.11.3.min.js", "/lib/underscore-min.js", "clickNextInQueue.js"]
   }],
   "permissions": [
     "<all_urls>",
